@@ -5,7 +5,7 @@ if( !defined('MEDIAWIKI') ) exit();
 # $opcWhitelist - must be set in LocalSettings
 # $opcBlacklist - can be set in LocalSettings
 # $opcMaxNestingLevel = 2000; // not sure if it's needed
-$opcDebug           = new opcDebugClass; // or false
+$opcDebug           = false; // new opcDebugClass; // or false
 
 if( $opcDebug ) {
     $opcDebug->log('debug started at ' . time());
