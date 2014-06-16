@@ -23,6 +23,7 @@ if( $opcDebug ) {
  *   - class extends and implements
  *
  * @version 0.0.1-05.06.2014
+ * @license GPL
  * @author  Eugen Wesseloh <codexp_at_gmx.net>
  *    05.06.2014 created
  *
