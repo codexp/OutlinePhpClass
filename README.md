@@ -1,6 +1,6 @@
 # OutlinePhpClass
 
-The OutlinePhpClass MediaWiki extension, outlines a php class (displays signature of the class only).
+The [OutlinePhpClass MediaWiki extension](https://www.mediawiki.org/wiki/Extension:OutlinePhpClass), outlines a php class (displays signature of the class only).
 
 ## Installation
 
@@ -12,6 +12,27 @@ Then simply include the entry point in your `LocalSettings.php` file:
 require_once( "$IP/extensions/OutlinePhpClass/OutlinePhpClass.php" );
 ```
 
+## Configuration
+
+*Mandatory*: Array of absolute paths or files to be allowed for reading by this extension.
+
+    $opcWhitelist
+
+*Optional*: Array of absolute paths or files to be blocked for reading by this extension.
+
+    $opcBlacklist
+
+
+**Note**: Either, in blacklist or whitelist, expanders like * or ? do not work!
+
+## Usage
+
+You can place a special function call like this:
+
+    {{#OutlinePhpClass:/whitelisted/phpsource/path/file.php}}
+
+that's it!
+
 ## Authors
 
 OutlinePhpClass has been written by
@@ -22,4 +43,3 @@ OutlinePhpClass has been written by
 ### Version 0.0.1 (16.06.2014)
 
 * first release
-
